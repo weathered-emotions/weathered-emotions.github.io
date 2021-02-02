@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+ <!--htmlのコメントアウト-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
+
+
+        <title>Weathered Emotions</title>
+
+        <!--CSS始まり-->
+        <!--コメントアウト-->
+        <style>
+            /*CSSのコメントアウト*/
+            body{
+                margin:0;
+                padding:0;
+                background-color: #ffffff; /*背景の色*/
+                color: #000000; /*全体の文字の色*/
+                font-size: 15px; /*全体のフォントサイズ*/
+                line-height: 2; /*行間*/
+                font-family: 'Open Sans', sans-serif;
+
+                background-image: url(images/titleback.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            p,h1,h2,h3,h4,h5,h6 {
+                margin-top: 0;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+
+            img{
+                /*margin-left: 100px;*/
+                display: block;
+                margin: 0 auto;
+                /*change*/width: 70%;
+                /*change*/margin-top: 30px;
+                /*change*/margin-bottom: 40px;  
+            }
+
+            #wrap{/*id属性の指定方法はシャープ（class名）*/
+                clear:both;
+                background-color: transparent;
+
+                margin: 0 auto;/*marginプロパティの１つめの数（上下の余白）を0、左右の幅をauto（＝自動で揃えるので中央揃え）*/
+                padding: 100px 0px;/*paddingはボックスの内側の余白を指定する。marginはボックスの外側の余白。指定順は上右下左*/
+            }
+
+            .content {/*class属性の指定方法はドット（class名）*/
+                background-color: #ffffff;
+                padding: 50px 0;
+            }
+
+            footer {
+                text-align: center;
+                color: #575757;
+                /*change*/margin-top: 0px;
+                /*change*/margin-bottom: 100px;
+            }
+
+            h1 {
+                font-size: 100px;/*Weathered Emotion（h1）のフォントサイズ*/
+                color: #000000;
+
+                /*change*/margin-top: 90px;
+                /*change*/margin-bottom: 0px;
+            }
+
+            h2 {
+                font-size: 45px;/*Weathered Emotion（h1）のフォントサイズ*/
+                color: #000000;
+
+                /*change*/margin-top: 20px;
+                /*change*/margin-bottom: 0px;
+            }
+
+            h3 {
+                font-size: 16px;/*thesisの説明（h3）のフォントサイズ*/
+                color: #000000;
+                text-align:center;
+                /*change*/margin-top: 0px;
+                /*change*/margin-bottom: 50px;
+            }
+
+            h4 {
+                font-size: 30px;/*Weathered Emotion（h1）のフォントサイズ*/
+                color: #000000;
+                text-align:center;
+                /*change*/margin-top: 0px;
+                /*change*/margin-bottom: 0px;
+            }
+
+
+            p{
+                font-size: 18px;
+                /*change*/margin-top: 10px;
+                /*change*/margin-bottom: 50px;
+            }
+
+            .plptptype_movie{
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                width: 70%;
+                overflow: hidden;
+                padding-bottom: 56.25%;
+                margin-bottom: 0px;
+            }
+
+            .plptptype_movie iframe{
+                display: block;
+                margin: 0 auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 65.7%;
+                border: none; /*境界線の打ち消し*/
+            }
+
+        </style>
+        <!--CSS終わり-->
+        
+    </head>
+
+    <body id="index">
+        <header></header>
+        <div id="wrap">
+            <h1>Weathered Emotions</h1>
+
+            <div class="content">
+
+                <div class="how_change">
+                    <h2>How emotions change with weather</h2>
+                    <p>Have you ever felt that your feelings change depending on the weather, climate, or season?<br> We visualized how ten emotions change with six weather variables from the research on the correlation between climate condition and emotions.<br> Knowing how emotions are affected by the weather will help you objectify yourself to confront yourself again and prepare yourself.
+                    </p>
+
+                </div>
+
+                <div class="calculation_system">
+                    <h2>Emotion calculation system based on weather data</h2>
+                    <img src="images/thesis.png" alt="thesis">
+                    <h3>E . Howarth and M. S. Hoffman 1984, 'A multidimensional approach to the relationship between mood and weather'</h3>
+                    <p>We referred to this paper to investigate the correlation between the ten emotions and the six weather indicators. <br>The figure above shows the correlation. Based on this, we created a system that can calculate the magnitude of emotions from weather data.
+                    </p>
+                    
+                </div>
+
+                <div class="10emotions">
+                    <h2>10 emotions</h2>
+                    <img src="images/emotions_explanation.png" alt="emotions_explanation">
+                    <br>
+                </div>
+
+                <div class="6_indicators">
+                    <h2>6 weather indicators</h2>
+                    <img src="images/icon_weather_indicators.png" alt="icon_weather_indicators">
+                    <br>
+                </div>
+
+                <div class="calender">
+                    <h2>World five cities calendar 2019</h2>
+                    <!--pの本文の中で改行するには<br>を挟む。-->
+                    <p>This graph shows how people's emotions change throughout the year targeting cities in five countries, Japan, the United Kingdom, the United States, Australia, and Brazil. <br>From the monthly weather average in 2019, we calculated each emotion's magnitude using the system.
+                    </p>
+                    <img src="images/WorldMap.png" alt="WorldMap">
+                    <br>
+                    <img src="images/Chiba.png" alt="Chiba">
+                    <br><br>
+                    <img src="images/London.png" alt="London">
+                    <br><br>
+                    <img src="images/Sydney.png" alt="Sydney">
+                    <br><br>
+                    <img src="images/NewYork.png" alt="NewYork">
+                    <br><br>
+                    <img src="images/Rio.png" alt="Rio">
+                    <br><br>
+                </div>
+                <div class="comparison">
+                    <img src="images/comparison.png" alt="comparison">
+                    <br>
+                </div>
+
+                <div class="prototype">
+                    <h2>Weathered emotions forecaster prototype</h2>
+                    <!--pの本文の中で改行するには<br>を挟む。-->
+                    <p>The purpose of this weather and emotion forecast app is to let you know the weather and emotions of the coming day. You customize the emotions that they want to see. <br>For example, if you want to work check how sleepiness and concentration would change in one day, select sleepiness and concentration. <br>Then the app shows the transition of those two emotions.
+                    <br><br>There is a weather icon in the center with the current time, and around it is the time of day, and each emotion line represents each hour's ups and downs. <br>As time changes, the weather icon changes, and the sphere on the emotion line also moves on time.
+                    <br><br>You can access to the prototype through the link. <br>You can see a prototype on Apple watch by sending a link via message app or email from your phone, and open the link on message/email on Apple watch.<br> Also you can see the prototype on your phone by just accessing the link.
+                    </p>
+
+                    <img src="images/watch.png" alt="watch">
+
+                    <h3><a href= "applewatch.html"target="_blank">for Watch </a>
+                    <br><a href= "smartphone_desktop.html"target="_blank">for Smartphone & Desktop</a></h3>
+
+                    <br>
+
+                    <p>Also, you can check how this prototype works in the following video.</p>
+
+                </div>
+                
+                <div class="plptptype_movie">              
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PoYzhdieA4U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="last">
+                    <h4>By knowing how emotions are affected by the weather,</h4>
+                    <h4>you can objectify yourself to face yourself again and prepare yourself.</h4>
+                </div>
+
+                <br><br><br><br><br><br><br>
+                
+            </div>
+        </div>
+
+        <footer>
+            <small>team KMA, Chiba University/  Katsumi Sato, Mei Obata, Asaki Nakamura</small>
+        </footer>
+
+    </body>
+</html>
