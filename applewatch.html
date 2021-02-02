@@ -891,11 +891,11 @@ function draw(){
   noStroke();
   var pressureTall;
   pressTall=map(pressNum[showNum],10,0,0,125*watchRate);
-  rect(centx-125*watchRate,centy-125*watchRate,250*watchRate,pressTall);//一番右の値をswitch caseする
+  rect(centx-120*watchRate,centy-115*watchRate,250*watchRate,pressTall);//一番右の値をswitch caseする
 
   //マスクの黒縁
   noFill();
-  strokeWeight(50);
+  strokeWeight(40*watchRate);
   stroke(0);
   ellipse(centx,centy,250*watchRate,250*watchRate);
 
