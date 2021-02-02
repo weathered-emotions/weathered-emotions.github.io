@@ -978,7 +978,7 @@ function pot_Calculator(sun, prec, temp){
     var pot_prec=0.11*(prec-precMin)/(precMax-precMin);
     var pot_temp=-0.11*(temp-tempMin)/(tempMax-tempMin);
     var pot_range=0.08+0.11+0.11;
-    var pot=((pot_sun+pot_prec+pot_temp)-(-0.08))/pot_range;
+    var pot=((pot_sun+pot_prec+pot_temp)-(-0.08-0.11))/pot_range;
     return pot;
 }
 
