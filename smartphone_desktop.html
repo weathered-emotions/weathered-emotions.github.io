@@ -889,11 +889,11 @@ function draw(){
   noStroke();
   var pressureTall;
   pressTall=map(pressNum[showNum],10,0,0,125);
-  rect(centx-125,centy-125,250,pressTall);//一番右の値をswitch caseする
+  rect(centx-120,centy-115,250,pressTall);//一番右の値をswitch caseする
 
   //マスクの黒縁
   noFill();
-  strokeWeight(50);
+  strokeWeight(40);
   stroke(0);
   ellipse(centx,centy,250,250);
 
