@@ -194,7 +194,7 @@ for(var i=0; i<pointNum; i++){
     tempNum[i]=Math.round(map(temp[i],0,30,0,10));
     windNum[i]=Math.round(map(wind[i],0,20,0,10));
     humidNum[i]=Math.round(map(humid[i],20,90,0,10));
-    pressNum[i]=Math.round(map(press[i],1000,1030,0,10));
+    pressNum[i]=Math.round(map(press[i],980,1030,0,10));
     
     //確認のログ出力
     console.log(i+  "番目の dt: "+ data.hourly[i]['dt'])
